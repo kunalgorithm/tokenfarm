@@ -25,6 +25,9 @@ contract DaiToken {
         balanceOf[msg.sender] = totalSupply;
     }
 
+    /* 
+    Allows owner to send tokens 
+    */
     function transfer(address _to, uint256 _value) public returns (bool success) {
         require(balanceOf[msg.sender] >= _value);
         balanceOf[msg.sender] -= _value;
@@ -39,6 +42,9 @@ contract DaiToken {
         return true;
     }
 
+    /* 
+    Lets someone else move tokens for you 
+    */
     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
         require(_value <= balanceOf[_from]);
         require(_value <= allowance[_from][msg.sender]);

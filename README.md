@@ -55,3 +55,9 @@ import  from any sources; imported from /Users/kunal/dev/eth/defi_tutorial/src/c
 ```
 
 Solution: use Semicolors (`;`) after lines of solidity code
+
+## Tests
+
+```
+truffle test
+```
