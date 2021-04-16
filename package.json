@@ -27,7 +27,8 @@
     "build": "react-scripts build",
     "test": "truffle test",
     "eject": "react-scripts eject",
-    "console": "truffle console"
+    "console": "truffle console",
+    "issue:tokens": "truffle exec scripts/issue-tokens.js"
   },
   "eslintConfig": {
     "extends": "react-app"
